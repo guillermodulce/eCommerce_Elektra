@@ -30,6 +30,7 @@ _In Windows_
 conda create -n env36 python=3.6
 ```
 ./anaconda3/Scripts/activate
+```
 conda activate env36
 ```
 conda install -r requirements.txt
