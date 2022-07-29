@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # eCommerce 💻 Elektra
 
 _This project was made for CS50x final project_
@@ -52,7 +51,3 @@ http://127.0.0.1:5000/
 
 ## Note:
 If you want to use the password restoration function, you must configure the environment variables with your email and password
-=======
-# eCommerce_Elektra
-Project for Harvard CS50x. Python Flask and SQLite
->>>>>>> bcac726ea81b4d4c3d74aa84890be512dadd3f8d
