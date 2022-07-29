@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=true">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='main.css')}}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    {% if title %}
+        <title>Elektra 💻 eCommerce - {{title}}</title>
+    {% else %}
+        <title>Elektra 💻 eCommerce</title>
+    {% endif %}
+</head>
+<body class="p-3 m-0 border-0 bd-example">
+
+            <!-- Navbar -->
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand mr-4" href="/"> Elektra 💻 eCommerce </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar Right Side -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{{url_for('main.home')}}">Home</a>
+            </div>
+            <div class="navbar-nav">
+                {% if current_user.is_authenticated %}
+                    <a class="nav-item nav-link" href="{{url_for('users.logout')}}">Logout</a>
+                    <a class="nav-item nav-link" href="{{url_for('products.new_product')}}">Create a Product</a>
+                    <a class="nav-item nav-link" href="{{url_for('categories.new_category')}}">Create a Category</a>
+                {% else %}
+                    <a class="nav-item nav-link" href="{{url_for('users.login')}}">Login</a>
+                    <a class="nav-item nav-link" href="{{url_for('users.register')}}">Register as Admin</a>
+                {% endif %}
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <br>
+    <br>
+
+<!-- Carousel -->    
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="{{url_for('static',filename='ecom-red.png' )}}" class="d-block w-100" alt="..." width="800" height="250">
+      <div class="carousel-caption d-none d-md-block">
+        
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="{{url_for('static',filename='log-cyan.png' )}}" class="d-block w-100" alt="..." width="800" height="250">
+      <div class="carousel-caption d-none d-md-block">
+      
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="{{url_for('static',filename='bis-blue.png' )}}" class="d-block w-100" alt="..." width="800" height="250">
+      <div class="carousel-caption d-none d-md-block">
+       
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel end -->   
+
+<br>
+
+
+    
+    <main role="main" class="row justify-content-md-center">
+        <div class="row">
+            <div class="col-md-12">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{category}}">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </div>
+        </div>
+            {% block content %}{% endblock %}
+      </div>
+
+    </main>
+
+    <section>
+      <div>
+        <image class="img-fluid rounded mx-auto d-block" src="{{url_for('static',filename='banner-electro-1-1920x1080-1-2.png' )}}" width="400" height="250"></image>
+      </div>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+<footer>
+
+  <a class="row justify-content-md-center" class="navbar-brand mr-4" href="/"> Elektra 💻 eCommerce ©2022 by Guillermo Dulce</a>
+
+</footer>
+
+</body>
+</html>
