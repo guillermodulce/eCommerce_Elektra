@@ -24,7 +24,7 @@ _This project runs within a virtual environment._
 _In Windows_
 * Clone or download this repository
 * Open the downloaded folder
-* Open the command line and type the following command
+* Open the command line and type the following command:
 
 ```
 conda create -n env36 python=3.6
