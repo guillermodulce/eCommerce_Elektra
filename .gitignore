@@ -16,4 +16,4 @@ node_modules
 *.old
 layout copy.html
 
-.pyc
+*.pyc
