@@ -29,6 +29,7 @@ def new_product():
             img3 = save_picture(form.image3.data,'product_pics')
         cate = Category.query.get(form.category.data)
         product = Product(name=form.name.data,
+                          brand=form.brand.data,
                           description=form.description.data,
                           weight=form.weight.data,
                           price=form.price.data,
