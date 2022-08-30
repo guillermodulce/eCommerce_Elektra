@@ -2,6 +2,8 @@
 
 _This project was made for CS50x final project_
 
+A simple application to register new products in a catalog of an electronic products store
+
 _Flask_
 _html_
 _css_
