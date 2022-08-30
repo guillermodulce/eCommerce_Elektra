@@ -9,7 +9,7 @@ def load_user(user_id):
 
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer,primary_key=True)
-    username = db.Column(db.String(20),unique=True,nullable=False)
+    username = db.Column(db.String(50),unique=True,nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String(60),nullable=False)
 
@@ -32,8 +32,8 @@ class User(db.Model, UserMixin):
 
 class Category(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(20),unique=True,nullable=False)
-    image_file = db.Column(db.String(20),nullable=False,default='defaultCategory.jpg')
+    name = db.Column(db.String(50),unique=True,nullable=False)
+    image_file = db.Column(db.String(50),nullable=False,default='defaultCategory.jpg')
     parent_category = db.Column(db.Integer, db.ForeignKey('category.id'),nullable=False,default='root')
 
     products = db.relationship('Product', backref='cate', lazy=True)
@@ -44,9 +44,10 @@ class Category(db.Model):
 
 class Product(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(20),unique=True, nullable=False)
-    description = db.Column(db.String(120),nullable=False)
-    weight = db.Column(db.String(10), nullable=False,default='1Kg')
+    name = db.Column(db.String(50),unique=True, nullable=False)
+    brand = db.Column(db.String(50),nullable=False)
+    description = db.Column(db.String(500),nullable=False)
+    weight = db.Column(db.String(20), nullable=False,default='1Kg')
     price = db.Column(db.Float(10), nullable=False,default=3.1)
     image_file1 = db.Column(db.String(20),nullable=False,default='defaultProduct.jpg')
     image_file2 = db.Column(db.String(20), nullable=False, default='defaultProduct.jpg')
