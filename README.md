@@ -2,7 +2,8 @@
 
 _This project was made for CS50x final project_
 
-A simple app to register new products in a catalog of an electronic products store.
+A simple app to register new products in a catalog of an electronic products store. In this first version, the application allows you to create an administrator user, who, after successfully logging in, can create categories and subcategories. Within these categories, the administrator can add products, with their details, such as brand, model, description, price and images.
+
 
 I exclusively used the tools, frameworks and resources studied in the HarvardX CS50 course.
 
