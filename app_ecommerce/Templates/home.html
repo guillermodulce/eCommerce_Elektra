@@ -33,7 +33,7 @@
                                  src="{{url_for('static',filename='product_pics/'+p.image_file1)}}" width=100 height=300 alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                <a href="{{url_for('products.view_product',product_id=p.id)}}" class="text-Capitalize">{{p.name}}</a>
+                                <a href="{{url_for('products.view_product',product_id=p.id)}}" class="text-Capitalize">{{p.brand}} {{p.name}}</a>
                                 </h4>USD $ {{p.price|round(2)}}</h4>
                                 <p class="card-text font-weight-light">BTC {{(p.price*quote)|round(10)}}</p>
                             </div>
