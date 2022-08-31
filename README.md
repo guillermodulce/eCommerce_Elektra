@@ -2,7 +2,7 @@
 #### Video Demo:  <URL HERE>
 #### Description:
 
-_This project was made for CS50x final project_
+_This project was made for CS50x final project._
 
 Elektra eCommerce is a simple web app, whose purpose is to register new articles in a catalog of an electronic products store. In this first version, the application allows you to create an administrator user, who, after successfully logging in, can create categories and subcategories. Within these categories, the administrator can add products, with their details, such as brand, model, description, price and images.
 
