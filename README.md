@@ -9,6 +9,7 @@ In the section of products by categories, you can view the items, with brand, mo
 I exclusively used the tools, frameworks and resources studied in the HarvardX CS50 course.
 
 _Flask_
+
 _Html_
 _Css_
 _Jinja_
