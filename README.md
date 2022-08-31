@@ -2,7 +2,7 @@
 
 _This project was made for CS50x final project_
 
-A simple app to register new products in a catalog of an electronic products store. In this first version, the application allows you to create an administrator user, who, after successfully logging in, can create categories and subcategories. Within these categories, the administrator can add products, with their details, such as brand, model, description, price and images.
+Elektra eCommerce is a simple web app, whose purpose is to register new articles in a catalog of an electronic products store. In this first version, the application allows you to create an administrator user, who, after successfully logging in, can create categories and subcategories. Within these categories, the administrator can add products, with their details, such as brand, model, description, price and images.
 
 In the section of products by categories, you can view the items, with brand, model, main image, price in us dollars and also its equivalent in Bitcoins. For the real-time conversion I used the API Layer Currency Data API.
 
