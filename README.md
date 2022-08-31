@@ -1,4 +1,6 @@
 # eCommerce 💻 Elektra
+#### Video Demo:  <URL HERE>
+#### Description:
 
 _This project was made for CS50x final project_
 
