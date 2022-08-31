@@ -6,7 +6,7 @@ Elektra eCommerce is a simple web app, whose purpose is to register new articles
 
 In the section of products by categories, you can view the items, with brand, model, main image, price in us dollars and also its equivalent in Bitcoins. For the real-time conversion I used the API Layer Currency Data API.
 
-I exclusively used the tools, frameworks and resources studied in the HarvardX CS50 course.
+I exclusively used the tools, frameworks and resources studied in the HarvardX CS50 course:
 
 * Flask
 * Html
@@ -16,7 +16,7 @@ I exclusively used the tools, frameworks and resources studied in the HarvardX C
 * Bootstrap
 * API
 
-This web application is based on the Python Flask framework. It is styled with some Bootstrap 5.2 components in the menu, alerts, carousel and grid structure.
+This web application is based on the Python Flask framework, and it is styled with some Bootstrap 5.2 components for the menu, alerts, carousel and grid structure.
 
 For database management I used Sqlite 3 and Sqlite Studio for some optimizations.
 
