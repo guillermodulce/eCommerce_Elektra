@@ -6,7 +6,6 @@ A simple app to register new products in a catalog of an electronic products sto
 
 In the section of products by categories, you can view the items, with brand, model, main image, price in us dollars and also its equivalent in Bitcoins. For the real-time conversion I used the API Layer Currency Data API.
 
-
 I exclusively used the tools, frameworks and resources studied in the HarvardX CS50 course.
 
 _Flask_
