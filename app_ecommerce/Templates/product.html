@@ -5,12 +5,12 @@
             <a class="col-md-1 list-group-item list-group-item-action list-group-item-link" href="javascript:history.back()"> Back</a>
             <div class="col-md-11">
               <div class="media-body">
+                  <h2 class="mr-2 text-primary" >{{ product.brand }}</h2>
                   <h2 class="mr-2 text-primary" >{{ product.name }}</h2>
                   <p class="text-muted">weight: {{ product.weight }}</p>
                   <p class="article-content">Description: {{ product.description }}</p>
                   <br>
-                  <h4 class="text-muted">Cost</h4>
-                  <p class="article-title">BTC {{ product.price*quote|round(8)|int }}</p>
+                  <h6 class="text-muted">Price</h6>
                   <p class="article-title text-muted">$USD {{ product.price|round(2) }}</p>
                 </div>
               </div>

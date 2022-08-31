@@ -2,7 +2,7 @@
 {% block content %}
     <div class="row justify-content-md-center text-center">
     <!-- Categories here -->
-    <div class="col-md-10">
+    <div class="col-md-12">
       <div class="content-section">
         <h3 class="">Categories</h3>
         <div class="list-group">
@@ -20,21 +20,21 @@
     </div>
     <!-- Products here -->
     {% if products %}
-        <div class="col-md-8">
+        <div class="col-md-12">
           <div class="content-section">
             <h3 class="text-center">Products</h3>
               <div class="col-lg-12">
                     <div class="row">
                       {% for p in products %}
-                        <div class="col-lg-4 col-md-6 mb-3">
+                        <div class="col-lg-3 col-md-6 mb-2">
                             <div class="card h-100">
                             <a href="{{url_for('products.view_product',product_id=p.id)}}">
-                            <img class="card-img-top"
-                                 src="{{url_for('static',filename='product_pics/'+p.image_file1)}}" width=100 height=250 alt=""></a>
+                            <img class="card-img-top img-fluid"
+                                 src="{{url_for('static',filename='product_pics/'+p.image_file1)}}" width=100 height=300 alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                 <a href="{{url_for('products.view_product',product_id=p.id)}}" class="text-Capitalize">{{p.name}}</a>
-                                </h4>$USD {{p.price|round(2)}}</h4>
+                                </h4>USD $ {{p.price|round(2)}}</h4>
                                 <p class="card-text font-weight-light">BTC {{(p.price*quote)|round(10)}}</p>
                             </div>
                             </div>

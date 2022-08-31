@@ -23,7 +23,7 @@ def save_picture(form_picture,folder):
     return picture_fname
 
 def get_quote_USD_to(change):
-    url = 'http://api.currencylayer.com/live?access_key=405e0a2e943e4174df8bb5881800e101&currencies=USD,ARS,AUD,BTC,CAD,PLN,MXN&format=1'
+    url = 'http://api.currencylayer.com/live?access_key=405e0a2e943e4174df8bb5881800e101&currencies=USD,ARS,AUD,BTC,CAD,EUR,MXN&format=1'
     response = requests.get(url)
     if (response.status_code == 200):
         quote = response.json()["quotes"]['USD'+change] 
