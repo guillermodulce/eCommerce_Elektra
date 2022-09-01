@@ -52,7 +52,7 @@ The administrator can create a new main category or subcategory within the main 
 
 * Create a product
 
-
+In the create a product section, the administrator must complete the following fields: Name, brand, description, weight, price in dollars. Up to three images per product can also be entered. Then you must indicate to which category the created product belongs. The system performs a validation so that the characters in the description do not exceed 1000 and in the name and brand, up to 50 characters can be used.
 
 * Reset password
 
