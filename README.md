@@ -4,9 +4,9 @@
 
 _This project was made for CS50x final project._
 
-Elektra eCommerce is a simple web app, whose purpose is to register new articles in a catalog of an electronic products store. In this first version, the application allows you to create an administrator user, who, after successfully logging in, can create categories and subcategories. Within these categories, the administrator can add products, with their details, such as brand, model, description, price and images.
+Elektra eCommerce is a simple web app, whose purpose is to register new articles in a catalog of an electronic products store. In this first version, the application allows you to create an administrator user, who after successfully logging in, can create categories and subcategories. Within these categories, the administrator can add products, with their details, such as brand, model, description, price and images.
 
-In the section of products by categories, you can view the items, with brand, model, main image, price in us dollars and also its equivalent in Bitcoins. For the real-time conversion I used the API Layer Currency Data API.
+In the section of products by categories, you can view the items, with brand, model, main image, price in US dollars and also its equivalent in Bitcoins. For the real-time conversion I used the API Layer Currency Data API.
 
 I exclusively used the tools, frameworks and resources studied in the HarvardX CS50 course:
 
@@ -21,6 +21,8 @@ I exclusively used the tools, frameworks and resources studied in the HarvardX C
 This web application is based on the Python Flask framework, and it is styled with some Bootstrap 5.2 components for the menu, alerts, carousel and grid structure.
 
 For database management I used Sqlite 3 and Sqlite Studio for some optimizations.
+
+In future implementations, stock management and cost and supplier information will be included. The development of the shopping cart will have the possibility of paying with crypto assets, digital wallets and credit cards.
 
 
 
