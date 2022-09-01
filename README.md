@@ -1,5 +1,5 @@
 # eCommerce 💻 Elektra
-#### Video Demo:  <URL HERE>
+#### Video Demo:  <URL https://youtu.be/cXIL5Bu1lE4>
 #### Description:
 
 _This project was made for CS50x final project._
