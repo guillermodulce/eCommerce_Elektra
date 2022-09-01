@@ -24,7 +24,7 @@ For database management I used Sqlite 3 and Sqlite Studio for some optimizations
 
 In future implementations, stock management, cost and supplier information will be included. The development of the shopping cart will have the possibility of paying with crypto assets, digital wallets and credit cards.
 
-
+![Image text](https://github.com/)
 
 
 ## How to run this project 🚀
