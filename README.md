@@ -22,7 +22,7 @@ This web application is based on the Python Flask framework, and it is styled wi
 
 For database management I used Sqlite 3 and Sqlite Studio for some optimizations.
 
-In future implementations, stock management and cost and supplier information will be included. The development of the shopping cart will have the possibility of paying with crypto assets, digital wallets and credit cards.
+In future implementations, stock management, cost and supplier information will be included. The development of the shopping cart will have the possibility of paying with crypto assets, digital wallets and credit cards.
 
 
 
