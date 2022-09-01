@@ -44,11 +44,21 @@ In the register as administrator section, you must enter the user name, email, p
 
 * Login
 
-
+In the login section you can request the reset of the password, in case it has been forgotten.
 
 * Create a category
+
+The administrator can create a new main category or subcategory within the main ones. To do this, you must enter the create a category section, enter the name, optionally put a representative image of the category, and then in the drop-down menu, choose whether it will be a main category or it will be within another already created category.
+
 * Create a product
+
+
+
 * Reset password
+
+If you want to use the password restoration function, you must configure the environment variables with your email and password.
+
+
 
 ![Image text](https://github.com/guillermodulce/eCommerce_Elektra/blob/main/app_ecommerce/static/elektrascr.png)
 
@@ -91,5 +101,4 @@ python run.py
 
 http://127.0.0.1:5000/
 
-## Note:
-If you want to use the password restoration function, you must configure the environment variables with your email and password
+
