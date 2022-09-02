@@ -30,13 +30,12 @@ In future implementations, stock management, cost and supplier information will 
 
 The main categories are located on the initial screen, as well as the entry to the administrator's registry and login.
 
-
-![Image text](https://github.com/guillermodulce/eCommerce_Elektra/blob/main/app_ecommerce/static/elektrascr.png)
-
-
 * Category view
 
 When entering the view by category, you can see the list of items, with their respective image, brand, name, weight, price in US dollars and its equivalent in Bitcoins. For this we use the Currency Data API live/endpoint <url https://apilayer.com/marketplace/currency_data-api>, which provides a simple REST API with real-time and historical exchange rates for 168 world currencies, delivering currency pairs in universally used, compatible JSON format. with any of your applications. Spot exchange rate data is retrieved from several major forex data providers in real time, validated, processed and delivered every hour, every 10 minutes or even within the 60 second market window.
+
+![Image text](https://github.com/guillermodulce/eCommerce_Elektra/blob/main/app_ecommerce/static/elektrascr.png)
+
 
 * Product detail view
 
