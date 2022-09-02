@@ -30,6 +30,10 @@ In future implementations, stock management, cost and supplier information will 
 
 The main categories are located on the initial screen, as well as the entry to the administrator's registry and login.
 
+
+![Image text](https://github.com/guillermodulce/eCommerce_Elektra/blob/main/app_ecommerce/static/elektrascr.png)
+
+
 * Category view
 
 When entering the view by category, you can see the list of items, with their respective image, brand, name, weight, price in US dollars and its equivalent in Bitcoins. For this we use the Currency Data API live/endpoint <url https://apilayer.com/marketplace/currency_data-api>, which provides a simple REST API with real-time and historical exchange rates for 168 world currencies, delivering currency pairs in universally used, compatible JSON format. with any of your applications. Spot exchange rate data is retrieved from several major forex data providers in real time, validated, processed and delivered every hour, every 10 minutes or even within the 60 second market window.
@@ -54,13 +58,15 @@ The administrator can create a new main category or subcategory within the main 
 
 In the create a product section, the administrator must complete the following fields: Name, brand, description, weight, price in dollars. Up to three images per product can also be entered. Then you must indicate to which category the created product belongs. The system performs a validation so that the characters in the description do not exceed 1000 and in the name and brand, up to 50 characters can be used.
 
+![Image text](https://github.com/guillermodulce/eCommerce_Elektra/blob/main/app_ecommerce/static/127.0.0.1_5000_products_new.png.png)
+
+
 * Reset password
 
 If you want to use the password restoration function, you must configure the environment variables with your email and password.
 
 
 
-![Image text](https://github.com/guillermodulce/eCommerce_Elektra/blob/main/app_ecommerce/static/elektrascr.png)
 
 
 ## How to run this project 🚀
